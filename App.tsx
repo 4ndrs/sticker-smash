@@ -12,6 +12,7 @@ import CircleButton from "./components/circle-button";
 import PlaceholderImage from "./assets/images/background-image.png";
 
 import * as ImagePicker from "expo-image-picker";
+import { GestureHandlerRootView } from "react-native-gesture-handler";
 
 const App = () => {
   const [pickedEmoji, setPickedEmoji] = useState<ImageSourcePropType>();
@@ -35,7 +36,7 @@ const App = () => {
   };
 
   return (
-    <View style={styles.container}>
+    <GestureHandlerRootView style={styles.container}>
       <StatusBar style="light" />
 
       <View style={styles.imageContainer}>
@@ -87,7 +88,7 @@ const App = () => {
           onCloseModal={() => setIsModalVisible(false)}
         />
       </EmojiPicker>
-    </View>
+    </GestureHandlerRootView>
   );
 };
 

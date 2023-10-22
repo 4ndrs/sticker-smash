@@ -7,6 +7,8 @@ import {
   ImageSourcePropType,
 } from "react-native";
 
+import Heart from "../assets/images/heart.png";
+import Heart2 from "../assets/images/heart2.png";
 import Emoji1 from "../assets/images/emoji1.png";
 import Emoji2 from "../assets/images/emoji2.png";
 import Emoji3 from "../assets/images/emoji3.png";
@@ -14,7 +16,16 @@ import Emoji4 from "../assets/images/emoji4.png";
 import Emoji5 from "../assets/images/emoji5.png";
 import Emoji6 from "../assets/images/emoji6.png";
 
-const emojis = [Emoji1, Emoji2, Emoji3, Emoji4, Emoji5, Emoji6] as const;
+const emojis = [
+  Heart,
+  Heart2,
+  Emoji1,
+  Emoji2,
+  Emoji3,
+  Emoji4,
+  Emoji5,
+  Emoji6,
+] as const;
 
 type Props = {
   onSelect: (value: ImageSourcePropType) => void;
